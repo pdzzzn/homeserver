@@ -9,7 +9,7 @@
 #
 vpn_network: '10.13.13.0/24'
 
-lan_network: '192.168.3.0/24'
+lan_network: '192.168.1.0/29'
 
 swag_network: '10.0.0.0/27'
 
@@ -44,25 +44,25 @@ iot_interface: eth 2
 #
 hostname: '{{ inventory_hostname }}'
 
-timezone: Europe/Amsterdam
+timezone: Europe/Madrid
 
-dot_nameservers:
-    [
-        185.95.218.42@853#dns.digitale-gesellschaft.ch,
-        94.140.15.140@853#dns-unfiltered.adguard.com,
-    ]
+#dot_nameservers:
+#    [
+#        185.95.218.42@853#dns.digitale-gesellschaft.ch,
+#        94.140.15.140@853#dns-unfiltered.adguard.com,
+#    ]
 
 ntp_timezone: '{{ timezone }}'
 
-locale: en_US.UTF-8
+locale: de_DE.UTF-8
 
 dns_nameservers: ['1.1.1.1', '1.0.0.1']
 
 fish_prompt_color: blue
 
-keyboard_layout: us
+keyboard_layout: de
 
-username: notthebee
+username: pi
 
 guid: '1000'
 
@@ -102,7 +102,7 @@ extra_packages:
     - lm-sensors
     - iotop
     - ncdu
-    - hddtemp
+#    - hddtemp
 
 #
 # Apt mirrors
@@ -115,13 +115,13 @@ apt_mirror: http://de.ports.ubuntu.com
 # Email credentials (for SMART and Snapraid error reporting)
 #
 
-email: moe@notthebe.ee
+email: patrick.h98@outlook.com
 
 email_login: '{{ email }}'
 
-email_smtp_host: smtp.mailbox.org
+email_smtp_host: smtp-mail.outlook.com
 
-email_smtp_port: 465
+email_smtp_port: 25
 
 email_smtp_port_startls: 587
 
