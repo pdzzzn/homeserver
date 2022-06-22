@@ -1,2 +1,0 @@
-[homeserver]
-homeserver ansible_host=192.168.1.29 ansible_user=pi ansible_connection=ssh ansible_ssh_pass=raspberry
