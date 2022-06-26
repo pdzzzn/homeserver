@@ -25,9 +25,9 @@
         tags:
             - neovim
 
-      - role: geerlingguy.security
-        tags:
-            - security
+#      - role: geerlingguy.security
+#        tags:
+#            - security
 
       - role: docker
         tags:
