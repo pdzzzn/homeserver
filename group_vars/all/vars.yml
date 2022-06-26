@@ -47,6 +47,7 @@ hostname: '{{ inventory_hostname }}'
 timezone: Europe/Madrid
 
 ssh_public_key: ~/.ssh/homeserver
+
 #dot_nameservers:
 #    [
 #        185.95.218.42@853#dns.digitale-gesellschaft.ch,
