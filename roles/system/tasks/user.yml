@@ -6,7 +6,7 @@
 - name: Create a login user
   user:
     name: "{{ username }}"
-    password: "{{ password | password_hash('sha512') }}"
+    password: "raspberry"
     groups: 
       - "{{ sudo_group }}"
       - users
